@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FRESH EGG</string>
+    <string name="title_splash">FRESH EGG</string>
+    <string name="info_splash">ketuk dimana saja</string>
+
+    <string name="title_onboarding">Deteksi Telur\nSegar &amp; Busuk</string>
+    <string name="desc_onboarding">CNN Model untuk mendeteksi kualitas telur hanya dengan sekali foto. Cepat, akurat, mudah</string>
+    <string name="btn_start_scanning">START SCANNING</string>
+
+    <string name="desc_scan_instruction">Foto telur dari jarak dekat dengan menggunakan teknik di teropong menggunakan cahaya untuk hasil yang akurat</string>
+    <string name="btn_analyze_now">ANALISIS SEKARANG</string>
+
+    <string name="msg_safe">Telur anda aman untuk dikonsumsi</string>
+    <string name="msg_unsafe">Telur anda tidak aman untuk dikonsumsi</string>
+    <string name="btn_back_to_home">KEMBALI KE BERANDA</string>
+</resources>

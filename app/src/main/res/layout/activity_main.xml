@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!-- ================= LAYAR 1: SPLASH SCREEN ================= -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <!-- Gambar Telur Mata Sapi Minimalis -->
+        <ImageView
+            android:id="@+id/img_splash_egg"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/asset1"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toTopOf="@+id/txt_splash_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <!-- Judul FRESH EGG (Font Pixel) -->
+        <TextView
+            android:id="@+id/txt_splash_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/title_splash"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:fontFamily="@font/vt323"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt_splash_tap_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_splash_egg" />
+
+        <!-- Teks Info "ketuk dimana saja" -->
+        <TextView
+            android:id="@+id/txt_splash_tap_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/info_splash"
+            android:textColor="#888888"
+            android:textSize="18sp"
+            android:fontFamily="@font/vt323"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_splash_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ================= LAYAR 2: ONBOARDING SCREEN ================= -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_onboarding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/header_onboarding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/app_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:fontFamily="@font/vt323"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Cute Egg Illustration (asset2) -->
+        <ImageView
+            android:id="@+id/img_onboarding_egg"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:src="@drawable/asset2"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toTopOf="@+id/txt_onboarding_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_onboarding"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txt_onboarding_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_onboarding"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintBottom_toTopOf="@+id/txt_onboarding_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_onboarding_egg" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/txt_onboarding_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="36dp"
+            android:text="@string/desc_onboarding"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintBottom_toTopOf="@+id/btn_start_scanning"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_onboarding_title" />
+
+        <!-- Button Start Scanning -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_start_scanning"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/btn_start_scanning"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_button_yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ================= LAYAR 3: SCAN SCREEN ================= -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/header_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/app_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:fontFamily="@font/vt323"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Container Box rounded untuk foto / unggah -->
+        <FrameLayout
+            android:id="@+id/container_image_picker"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:background="@drawable/bg_image_container"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/txt_scan_instruction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_scan"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <!-- Tampilan Foto Pengguna -->
+            <ImageView
+                android:id="@+id/img_selected_egg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+            <!-- Penampung default tanda tambah (+) kuning -->
+            <LinearLayout
+                android:id="@+id/layout_default_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Lingkaran grid kuning dengan tanda tambah (+) putih di dalam -->
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg_plus_circle">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_input_add"
+                        app:tint="@color/white"
+                        android:contentDescription="@string/app_name" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Deskripsi/Instruksi Teropong Cahaya -->
+        <TextView
+            android:id="@+id/txt_scan_instruction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="36dp"
+            android:text="@string/desc_scan_instruction"
+            android:textColor="#555555"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintBottom_toTopOf="@+id/btn_analyze_now"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_image_picker" />
+
+        <!-- Tombol Analisis Sekarang -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_analyze_now"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/btn_analyze_now"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/vt323"
+            android:textStyle="bold"
+            android:background="@drawable/bg_button_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ================= LAYAR 4 & 5: POP-UP OVERLAY HASIL ANALISIS ================= -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_result_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- Box Frame yang sama persis ukurannya dengan Scan Screen -->
+        <FrameLayout
+            android:id="@+id/container_result_icon"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:background="@drawable/bg_image_container"
+            app:layout_constraintBottom_toTopOf="@+id/txt_result_message"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <!-- Gambar Centang Vektor (Layar 4) atau Silang Vektor (Layar 5) -->
+            <ImageView
+                android:id="@+id/img_result_status_icon"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_success_check"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+
+        <!-- Pesan Hasil Analisis (Aman / Tidak Aman) -->
+        <TextView
+            android:id="@+id/txt_result_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="36dp"
+            android:text="@string/msg_safe"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintBottom_toTopOf="@+id/btn_back_to_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_result_icon" />
+
+        <!-- Tombol Kembali ke Beranda -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back_to_home"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/btn_back_to_home"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/vt323"
+            android:textStyle="bold"
+            android:background="@drawable/bg_button_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

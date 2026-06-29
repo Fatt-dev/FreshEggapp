@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Lingkaran Kuning Latar Belakang dengan Garis Tepi Hitam -->
+    <path
+        android:fillColor="#FCD02C"
+        android:strokeColor="#000000"
+        android:strokeWidth="4"
+        android:pathData="M60,60 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/>
+
+    <!-- Pola Kotak-kotak Halus di dalam lingkaran (Retro Grid) -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"
+        android:strokeAlpha="0.1"
+        android:pathData="M20,60 L100,60 M60,20 L60,100 M40,30 L40,90 M80,30 L80,90 M30,40 L90,40 M30,80 L90,80"/>
+
+    <!-- Outline Hitam untuk Silang (X) -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:pathData="M42,42 L78,78 M78,42 L42,78"/>
+
+    <!-- Silang Merah -->
+    <path
+        android:strokeColor="#FF3333"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:pathData="M42,42 L78,78 M78,42 L42,78"/>
+        
+</vector>

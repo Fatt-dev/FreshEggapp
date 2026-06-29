@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    
+    <!-- Warna khusus sesuai tangkapan layar -->
+    <color name="egg_yellow">#FCD02C</color> <!-- Tombol Start Scanning & Lingkaran Pop-up -->
+    <color name="egg_green">#66FF66</color>  <!-- Tombol Analisis Sekarang & Kembali ke Beranda -->
+    <color name="egg_red">#FF3333</color>    <!-- Ikon Silang (Busuk) -->
+    
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_border">#000000</color>
+</resources>

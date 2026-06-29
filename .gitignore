@@ -1,0 +1,47 @@
+# ============================
+# Android / Gradle
+# ============================
+*.iml
+.gradle/
+build/
+/local.properties
+/.idea/
+.DS_Store
+/captures
+.externalNativeBuild/
+.cxx/
+*.hprof
+
+# ============================
+# APK / Build Output
+# ============================
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# ============================
+# Model Files (terlalu besar untuk GitHub)
+# ============================
+# File .pkl dan .pt di root project (~9MB & ~8MB)
+/egg_classifier.pkl
+/egg_classifier.pt
+
+# ============================
+# OS Generated Files
+# ============================
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+
+# ============================
+# IDE / Editor
+# ============================
+*.iml
+.idea/
+*.ipr
+*.iws
+.vscode/
+*.code-workspace

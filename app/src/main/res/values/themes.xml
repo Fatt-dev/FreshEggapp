@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema aplikasi utama tanpa ActionBar -->
+    <style name="Theme.FreshEgg" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Warna utama -->
+        <item name="colorPrimary">@color/egg_yellow</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/egg_green</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Status bar putih bersih dengan ikon gelap -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        
+        <!-- Latar belakang aplikasi -->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>
