@@ -1,6 +1,3 @@
-<img align = "center" width="349" height="316" alt="asset2" src="https://github.com/user-attachments/assets/33ad477c-55b8-45fd-848c-f2e7b40d764d" />
-
-
 <h1 align="center">FRESH EGG</h1>
 
 <p align="center">
@@ -55,6 +52,10 @@
   <img width="720" height="1600" alt="layar2" src="https://github.com/user-attachments/assets/6a275797-1b0f-42ab-8565-54243ae3fc17" />
   <img width="1080" height="2400" alt="layar3" src="https://github.com/user-attachments/assets/9d01f3f7-3005-4547-bacf-3a8a3d52bc30" />
 </p>
+<div style="display: flex; justify-content: center; gap: 10px;">
+    <img width="1080" height="2400" alt="layar1" src="https://github.com/user-attachments/assets/256075ce-353f-455e-8849-45af784e3d39" />
+  <img width="720" height="1600" alt="layar2" src="https://github.com/user-attachments/assets/6a275797-1b0f-42ab-8565-54243ae3fc17" />
+  <img width="1080" height="2400" alt="layar3" src="https://github.com/user-attachments/assets/9d01f3f7-3005-4547-bacf-3a8a3d52bc30" />
 
 1. **Splash Screen** — Layar pembuka, ketuk di mana saja untuk melanjutkan
 2. **Onboarding Screen** — Penjelasan singkat aplikasi + tombol *Start Scanning*
