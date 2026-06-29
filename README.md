@@ -47,10 +47,14 @@
 
 
 ```
-<div style="display: flex; justify-content: center; gap: 10px;">
-    <img width="50%" alt="layar1" src="https://github.com/user-attachments/assets/256075ce-353f-455e-8849-45af784e3d39" />
-  <img width="50%" alt="layar2" src="https://github.com/user-attachments/assets/6a275797-1b0f-42ab-8565-54243ae3fc17" />
-  <img width="50%" alt="layar3" src="https://github.com/user-attachments/assets/9d01f3f7-3005-4547-bacf-3a8a3d52bc30" />
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/256075ce-353f-455e-8849-45af784e3d39" width="250"/></td>
+    <td><img src="https://github.com/user-attachments/assets/6a275797-1b0f-42ab-8565-54243ae3fc17" width="250"/></td>
+    <td><img src="https://github.com/user-attachments/assets/9d01f3f7-3005-4547-bacf-3a8a3d52bc30" width="250"/></td>
+  </tr>
+</table>
+
 
 1. **Splash Screen** — Layar pembuka, ketuk di mana saja untuk melanjutkan
 2. **Onboarding Screen** — Penjelasan singkat aplikasi + tombol *Start Scanning*
