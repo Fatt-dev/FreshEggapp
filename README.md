@@ -1,4 +1,4 @@
-<img width="349" height="316" alt="asset2" src="https://github.com/user-attachments/assets/33ad477c-55b8-45fd-848c-f2e7b40d764d" />
+<img align = "center" width="349" height="316" alt="asset2" src="https://github.com/user-attachments/assets/33ad477c-55b8-45fd-848c-f2e7b40d764d" />
 
 
 <h1 align="center">FRESH EGG</h1>
@@ -46,11 +46,15 @@
                                                                         ▼
                                                                Kembali ke Onboarding
 
-<img width="1080" height="2400" alt="layar1" src="https://github.com/user-attachments/assets/4c3865dc-fbca-4bb3-9b52-ba637b4a0c23" /> <img width="720" height="1600" alt="layar2" src="https://github.com/user-attachments/assets/967a1c73-f5a0-4d5e-91ef-f76a7bd3d9f4" /> <img width="1080" height="2400" alt="layar3" src="https://github.com/user-attachments/assets/7677424e-29f1-4488-aff0-51f4468d73a1" />
 
 
 
 ```
+<p align="center">
+  <img width="1080" height="2400" alt="layar1" src="https://github.com/user-attachments/assets/256075ce-353f-455e-8849-45af784e3d39" />
+  <img width="720" height="1600" alt="layar2" src="https://github.com/user-attachments/assets/6a275797-1b0f-42ab-8565-54243ae3fc17" />
+  <img width="1080" height="2400" alt="layar3" src="https://github.com/user-attachments/assets/9d01f3f7-3005-4547-bacf-3a8a3d52bc30" />
+</p>
 
 1. **Splash Screen** — Layar pembuka, ketuk di mana saja untuk melanjutkan
 2. **Onboarding Screen** — Penjelasan singkat aplikasi + tombol *Start Scanning*
